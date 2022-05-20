@@ -1,0 +1,19 @@
+{
+  "cwd": "D:\\Documents\\Code",
+  "type": [
+    "pwa"
+  ],
+  "name": "AmazingMovie",
+  "framework": "react",
+  "template": "tabs",
+  "bundler": "vite",
+  "cssPreProcessor": "less",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}

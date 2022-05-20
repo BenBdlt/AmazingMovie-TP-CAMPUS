@@ -1,0 +1,43 @@
+{
+  "name": "amazingmovie",
+  "private": true,
+  "version": "1.0.0",
+  "description": "AmazingMovie",
+  "repository": "",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "cross-env NODE_ENV=production vite build && npx workbox generateSW workbox-config.js",
+    "postinstall": "cpy --flat ./node_modules/framework7-icons/fonts/*.* ./src/fonts/ && cpy --flat ./node_modules/material-icons/iconfont/*.* ./src/fonts/"
+  },
+  "browserslist": [
+    "IOS >= 13",
+    "Safari >= 13",
+    "last 5 Chrome versions",
+    "last 5 Firefox versions",
+    "Samsung >= 12"
+  ],
+  "dependencies": {
+    "dom7": "^4.0.4",
+    "framework7": "^7.0.3",
+    "framework7-icons": "^5.0.5",
+    "framework7-react": "^7.0.3",
+    "material-icons": "^1.10.11",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-development": "^0.0.4",
+    "react-dom": "^18.1.0",
+    "skeleton-elements": "^4.0.0",
+    "swiper": "^8.1.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react-refresh": "^1.3.6",
+    "cpy-cli": "^4.1.0",
+    "cross-env": "^7.0.3",
+    "less": "^4.1.2",
+    "postcss-preset-env": "^7.6.0",
+    "vite": "^2.9.9",
+    "workbox-cli": "^6.5.3"
+  }
+}
